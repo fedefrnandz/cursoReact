@@ -5,10 +5,10 @@ import {
  
  
  
-function CreateUser() {
+function CreateUser2() {
  
-    const[Nombre, setNombre] = useState('Coloca tu nombre completo');
-    const[Email, setEmail] = useState('Ingresa tu Email');
+    const[Nombre, setNombre] = useState('Jose Contreras');
+    const[Email, setEmail] = useState('jose_contreras@gmail.com');
     const[Contraseña, setContraseña] = useState();
  
     return(
@@ -108,11 +108,11 @@ const styles = StyleSheet.create({
         opacity: 0.9,
         color: 'white',
         fontSize: 18,
- 
         }, 
+
     btn: {
         borderWidth: 1,
-        borderColor: 'black',
+        borderColor: 'white',
         height: 68,
         width: 327,
         marginTop: 80,
@@ -120,7 +120,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginLeft: 40,
+        borderRadius: 5,
+        fontWeight: 'bold',
+        fontFamily: 'Raleway',
     },
 });
  
-export default CreateUser;
+export default CreateUser2;
