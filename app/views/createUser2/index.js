@@ -25,22 +25,22 @@ function CreateUser2() {
             <Text style={styles.title}>Nombre</Text>
             <TextInput 
                 style={styles.text}
-                value={Nombre}
-                onChangeText={val => setNombre(val)}
+                placeholder= "Jose Contreras"
+                placeholderTextColor= 'white'
             />
             <Text style={styles.title}>Email</Text>
             <TextInput 
                 style={styles.text}
-                value={Email}
-                onChangeText={val => setEmail(val)}
+                placeholder= "jose_contreras@gmail.com"
+                placeholderTextColor= 'white'
             />
             <Text style={styles.title}>Contraseña</Text>
             
             <TextInput 
                 secureTextEntry
                 style={styles.text}
-                value={Contraseña}
-                onChangeText={val => setContraseña(val)}
+                placeholder= "·················"
+                placeholderTextColor= 'white'
             />
             </View>
         

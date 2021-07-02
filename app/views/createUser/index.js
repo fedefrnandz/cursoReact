@@ -7,9 +7,6 @@ import {
  
 function CreateUser() {
  
-    const[Nombre, setNombre] = useState('Coloca tu nombre completo');
-    const[Email, setEmail] = useState('Ingresa tu Email');
-    const[Contraseña, setContraseña] = useState();
  
     return(
         <ImageBackground source={require('../../assets/bg.png')} style={styles.container}>
@@ -25,22 +22,22 @@ function CreateUser() {
             <Text style={styles.title}>Nombre</Text>
             <TextInput 
                 style={styles.text}
-                value={Nombre}
-                onChangeText={val => setNombre(val)}
+                placeholder= "Coloca tu nombre completo"
+                placeholderTextColor= 'white'
             />
             <Text style={styles.title}>Email</Text>
             <TextInput 
                 style={styles.text}
-                value={Email}
-                onChangeText={val => setEmail(val)}
+                placeholder= "Ingresa tu Email"
+                placeholderTextColor= 'white'
             />
             <Text style={styles.title}>Contraseña</Text>
             
             <TextInput 
                 secureTextEntry
                 style={styles.text}
-                value={Contraseña}
-                onChangeText={val => setContraseña(val)}
+                placeholder= "Ingresa una contraseña"
+                placeholderTextColor= 'white'
             />
             </View>
         

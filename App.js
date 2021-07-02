@@ -16,7 +16,7 @@ import WelcomeScreen from './app/views/welcomeScreen';
 
 class App extends Component {
     render(){
-      return <WelcomeScreen/>;
+      return <CreateUser2/>;
     }
 
 }

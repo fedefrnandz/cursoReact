@@ -31,9 +31,6 @@ function SplashScreen() {
         
             <TouchableOpacity
                 style={styles.btn}
-                onPress={()=> {
-                    console.log({ Nombre, Email, Contraseña });
-                }}
             >
                 <Text style={styles.title2}>COMENZAR</Text>
             </TouchableOpacity>
