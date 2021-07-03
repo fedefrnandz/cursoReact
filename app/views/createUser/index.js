@@ -2,10 +2,11 @@ import React, { Component, useState } from 'react';
 import { 
     View, StyleSheet, Text, TextInput, TouchableOpacity, Image, ImageBackground,
 } from 'react-native';
+import { baseProps } from 'react-native-gesture-handler/lib/typescript/handlers/gestureHandlers';
  
  
  
-function CreateUser() {
+function CreateUser(props) {
  
  
     return(
@@ -44,7 +45,7 @@ function CreateUser() {
             <TouchableOpacity
                 style={styles.btn}
                 onPress={()=> {
-                    console.log({ Nombre, Email, Contraseña });
+                    props.navigation.navigate('CreateUser2')
                 }}
             >
                 <Text style={styles.title2}>REGISTRAR</Text>

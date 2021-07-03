@@ -6,10 +6,7 @@ import {
  
  
 function CreateUser2() {
- 
-    const[Nombre, setNombre] = useState('Jose Contreras');
-    const[Email, setEmail] = useState('jose_contreras@gmail.com');
-    const[Contraseña, setContraseña] = useState();
+
  
     return(
         <ImageBackground source={require('../../assets/bg.png')} style={styles.container}>

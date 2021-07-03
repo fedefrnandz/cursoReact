@@ -7,9 +7,6 @@ import {
  
 function SplashScreen() {
  
-    
-    const[Email, setEmail] = useState('jose_contreras@gmail.com');
-    const[Contraseña, setContraseña] = useState();
  
     return(
         <ImageBackground source={require('../../assets/bg.png')} style={styles.container}>
@@ -31,6 +28,9 @@ function SplashScreen() {
         
             <TouchableOpacity
                 style={styles.btn}
+                onPress={()=> {
+                    props.navigation.navigate('WelcomeScreen', { ID: 1 });
+                }}
             >
                 <Text style={styles.title2}>COMENZAR</Text>
             </TouchableOpacity>
